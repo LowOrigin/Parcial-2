@@ -1,0 +1,188 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    line-height: 1.6;
+}
+
+/* Contenedor principal */
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100px;
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+/* Estilo para el header */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 37px;
+    color: #00ffff;
+}
+
+.header .subti {
+    font-size: 20px;
+    color: #508db8;
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 18px;
+}
+
+/* Estilo del navbar */
+.navbar {
+    width: 100%;
+    background-color: #333;
+    padding: 15px 0;
+    position: sticky;
+    
+    z-index: 100;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    margin-bottom: 35px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 25px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #f0f0f0;
+    font-size: 1.1rem;
+    padding: 8px 15px;
+    
+}
+
+.navbar ul li a:hover {
+    background-color: #00ffff;
+    color: #1a1a1a;
+    border-radius: 5px;
+}
+
+/* Estilo para el contenido */
+.contenido {
+    text-align: center;
+    max-width: 800px;
+    margin: 40px 0;
+    animation: slideUp 1.5s ease-in-out;
+}
+
+.contenido h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #00ffff;
+}
+
+.contenido p {
+    font-size: 1.1rem;
+    color: #bfbfbf;
+    margin-bottom: 40px;
+}
+
+.contenido ul{
+text-align: center;
+list-style: none;
+}
+
+.apps h4{
+   margin: 30px 0;
+   padding: auto;
+}
+
+.apps li {
+    text-align: center;
+    margin: 15px;
+}
+
+.contfinal {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilo para las imágenes */
+.imagenes{
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 15px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+.img {
+
+    width: 45%;
+    max-width: 600px;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 15px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #f0f0f0;
+    margin-top: 50px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.footer p {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+
+/* Adaptaciones para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .contenido {
+        padding: 10px;
+    }
+
+    .imagenes {
+        width: 90%;
+    }
+}
